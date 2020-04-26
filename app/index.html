@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Magus</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="/" class="header__logo__img"></a>
+						</div>
+						<div class="header__content">
+							<div class="contacts">
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_mail">
+										<svg class="contacts__icon contacts__icon_letter" width="17" height="13">
+											<use xlink:href="./img/sprite.svg#letter"></use>
+										</svg>
+										<span class="contacts__text">
+											<a href="mailto:info@company24.com" class="link link_grey">info@company24.com</a>
+										</span>
+										<span class="contacts__text contacts__text_sub">
+											<span class="link link_red" data-open="subscribe">Подписаться на рассылку</span>
+										</span>
+									</div>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_address">
+										<svg class="contacts__icon contacts__icon_address" width="12" height="15">
+											<use xlink:href="./img/sprite.svg#pin"></use>
+										</svg>
+										<span class="contacts__text">г. Москва ул.Калнышевского 14<br> ст.м. Сагайдачного</span>
+									</div>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_schedule">
+										<svg class="contacts__icon contacts__icon_clock" width="16" height="16">
+											<use xlink:href="./img/sprite.svg#clock"></use>
+										</svg>
+										<span class="contacts__text">ПН-ПТ с 08:00 до 17:00</span>
+										<span class="contacts__text">СБ с 10:00 до 17:00</span>
+									</div>
+								</div>
+								<div class="contacts__col contacts__col_phones">
+									<div class="contacts__item contacts__item_phones">
+										<svg class="contacts__icon contacts__icon_phones" width="14" height="14">
+											<use xlink:href="./img/sprite.svg#phone"></use>
+										</svg>
+										<a href="tel:+78005553535" class="contacts__text">8 800 <strong>555 35 35</strong></a>
+										<a href="tel:+78002833029" class="contacts__text">8 800 <strong>283 30 29</strong></a>
+									</div>
+								</div>
+								<div class="contacts__col contacts__col_social">
+									<div class="social">
+										<a href="#" class="social__item">
+											<svg class="social__icon" width="8" height="15">
+												<use xlink:href="./img/sprite.svg#facebook"></use>
+											</svg>
+										</a>
+										<a href="#" class="social__item">
+											<svg class="social__icon" width="20" height="11">
+												<use xlink:href="./img/sprite.svg#vkontakte"></use>
+											</svg>
+										</a>
+										<a href="#" class="social__item">
+											<svg class="social__icon" width="15" height="15">
+												<use xlink:href="./img/sprite.svg#instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<nav class="nav">
+								<a href="#" class="nav__item is-active">
+									<svg class="nav__icon" width="15" height="14">
+										<use xlink:href="./img/sprite.svg#nav-home"></use>
+									</svg>
+									<span class="nav__name">Главная</span>
+								</a>
+								<a href="#" class="nav__item">
+									<svg class="nav__icon" width="18" height="20">
+										<use xlink:href="./img/sprite.svg#nav-about"></use>
+									</svg>
+									<span class="nav__name">О компании</span>
+								</a>
+								<a href="#" class="nav__item nav__item_special">
+									<svg class="nav__icon" width="14" height="15">
+										<use xlink:href="./img/sprite.svg#nav-special"></use>
+									</svg>
+									<span class="nav__name">Акции</span>
+								</a>
+								<a href="#" class="nav__item">
+									<svg class="nav__icon" width="18" height="15">
+										<use xlink:href="./img/sprite.svg#nav-cooperation"></use>
+									</svg>
+									<span class="nav__name">Сотрудничество</span>
+								</a>
+								<a href="#" class="nav__item">
+									<svg class="nav__icon" width="15" height="15">
+										<use xlink:href="./img/sprite.svg#nav-articles"></use>
+									</svg>
+									<span class="nav__name">Статьи и новости</span>
+								</a>
+								<a href="#" class="nav__item">
+									<svg class="nav__icon" width="15" height="15">
+										<use xlink:href="./img/sprite.svg#nav-reviews"></use>
+									</svg>
+									<span class="nav__name">Отзывы</span>
+								</a>
+								<a href="#" class="nav__item">
+									<svg class="nav__icon" width="15" height="15">
+										<use xlink:href="./img/sprite.svg#nav-contacts"></use>
+									</svg>
+									<span class="nav__name">Контакты</span>
+								</a>
+							</nav>
+						</div>
+						<span class="nav__open">
+							<i></i>
+						</span>
+					</div>
+				</div>
+			</header>
+
+			<section class="intro">
+				<div class="intro__item">
+					<div class="intro__row container">
+						<div class="intro__content">
+							<div class="intro__box">
+								<div class="intro__text">
+									<h1 class="intro__title">САНТЕХНИКА REA</h1>
+									<span class="intro__slogan">КАЧЕСТВО. НАДЕЖНОСТЬ. СТИЛЬ</span>
+								</div>
+							</div>
+							<div class="intro__pic">
+								<div class="intro__img img-contain">
+									<img src="./pic/intro-item-1.png" class="intro__img" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="intro__bg img-cover" style="background-image: url('../pic/intro-1.jpg')"></div>
+				</div>
+				<div class="intro__item">
+					<div class="intro__row container">
+						<div class="intro__content">
+							<div class="intro__box">
+								<div class="intro__text">
+									<h1 class="intro__title">САНТЕХНИКА REA</h1>
+									<span class="intro__slogan">КАЧЕСТВО. НАДЕЖНОСТЬ. СТИЛЬ</span>
+								</div>
+							</div>
+							<div class="intro__pic">
+								<div class="intro__img img-contain">
+									<img src="./pic/intro-item-1.png" class="intro__img" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="intro__bg img-cover" style="background-image: url('../pic/intro-1.jpg')"></div>
+				</div>
+				<div class="intro__item">
+					<div class="intro__row container">
+						<div class="intro__content">
+							<div class="intro__box">
+								<div class="intro__text">
+									<h1 class="intro__title">САНТЕХНИКА REA</h1>
+									<span class="intro__slogan">КАЧЕСТВО. НАДЕЖНОСТЬ. СТИЛЬ</span>
+								</div>
+							</div>
+							<div class="intro__pic">
+								<div class="intro__img img-contain">
+									<img src="./pic/intro-item-1.png" class="intro__img" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="intro__bg img-cover" style="background-image: url('../pic/intro-1.jpg')"></div>
+				</div>
+			</section>
+
+			<div class="benefits">
+				<div class="container">
+					<div class="benefits__row">
+						<div class="benefits__item">
+							<svg class="benefits__icon" width="45" height="42">
+								<use xlink:href="./img/sprite.svg#benefit-discount"></use>
+							</svg>
+							<div class="benefits__content">
+								<span class="benefits__title">ДИСКОНТ</span>
+								<span class="benefits__text">Дисконтная программа для постоянных клиентов</span>
+							</div>
+						</div>
+						<div class="benefits__item">
+							<svg class="benefits__icon" width="36" height="41">
+								<use xlink:href="./img/sprite.svg#benefit-exchange"></use>
+							</svg>
+							<div class="benefits__content">
+								<span class="benefits__title">ВОЗВРАТ</span>
+								<span class="benefits__text">Удобный возврат обмен</span>
+							</div>
+						</div>
+						<div class="benefits__item">
+							<svg class="benefits__icon" width="32" height="41">
+								<use xlink:href="./img/sprite.svg#benefit-guarantee"></use>
+							</svg>
+							<div class="benefits__content">
+								<span class="benefits__title">ГАРАНТИЯ</span>
+								<span class="benefits__text">Гарантия от производителя</span>
+							</div>
+						</div>
+						<div class="benefits__item">
+							<svg class="benefits__icon" width="29" height="41">
+								<use xlink:href="./img/sprite.svg#benefit-certificate"></use>
+							</svg>
+							<div class="benefits__content">
+								<span class="benefits__title">СЕРТИФИКАТ</span>
+								<span class="benefits__text">Только сертифицированная продукция</span>
+							</div>
+						</div>
+						<div class="benefits__item">
+							<svg class="benefits__icon" width="41" height="40">
+								<use xlink:href="./img/sprite.svg#benefit-stock"></use>
+							</svg>
+							<div class="benefits__content">
+								<span class="benefits__title">АССОРТИМЕНТ</span>
+								<span class="benefits__text">Ассортимент более 100 000 наименований</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="catalog">
+				<div class="container">
+					<h2 class="title">Новинки</h2>
+					<div class="catalog-slider js-catalog">
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 40 СМ c смесителем KOLO FREJA</span>
+									<span class="catalog-slider__price">1 272 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+								<div class="catalog-slider__pic img-contain">
+									<div class="catalog-slider__img">
+										<img src="./pic/catalog-new-3.jpg" alt="">
+									</div>
+								</div>
+							</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 40 СМ c смесителем KOLO FREJA</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 40 СМ c смесителем KOLO FREJA</span>
+									<span class="catalog-slider__price">1 272 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+								<div class="catalog-slider__pic img-contain">
+									<div class="catalog-slider__img">
+										<img src="./pic/catalog-new-3.jpg" alt="">
+									</div>
+								</div>
+							</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_new">New</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-new-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 40 СМ c смесителем KOLO FREJA</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="special">
+				<div class="container">
+					<h2 class="title">Выгодное предложение</h2>
+					<div class="special-slider js-special">
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-1.jpg')"></div>
+							</a>
+						</div>
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-2.jpg')"></div>
+							</a>
+						</div>
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-1.jpg')"></div>
+							</a>
+						</div>
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-2.jpg')"></div>
+							</a>
+						</div>
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-1.jpg')"></div>
+							</a>
+						</div>
+						<div class="special-slider__col">
+							<a href="#" class="special-slider__item">
+								<span class="special-slider__title">ПЕРЕЙТИ В КАТАЛОГ</span>
+								<div class="special-slider__bg img-cover" style="background-image: url('../pic/special-item-2.jpg')"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog">
+				<div class="container">
+					<h2 class="title">Хиты продаж</h2>
+					<div class="catalog-slider js-catalog">
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+						<div class="catalog-slider__col">
+							<a href="#" class="catalog-slider__item">
+								<span class="catalog__label catalog__label_hit">Hit</span>
+								<div class="catalog-slider__head">
+									<div class="catalog-slider__pic img-contain">
+										<div class="catalog-slider__img">
+											<img src="./pic/catalog-hit-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__content">
+									<span class="catalog-slider__name">Умывальник 70 СМ LAUFEN PRO S</span>
+									<span class="catalog-slider__price">2 388 руб.</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="container">
+					<h2 class="title">Новости и события</h2>
+					<div class="news__row">
+						<div class="news__col">
+							<a href="#" class="news__item">
+								<div class="news__pic img-cover" style="background-image: url('../pic/news-item-1.jpg')"></div>
+								<h3 class="news__title">Выбираем идеальный смеситель для душевой кабины. Какими бывают и чем отличаются?</h3>
+								<span class="news__text">Обустройство душевой кабины — занятие не из простых. Особенно если вы самостоятельно выбираете перегородку, поддон, душевой трап и смеситель.</span>
+								<span class="news__date">7 Декабря 2019</span>
+							</a>
+						</div>
+						<div class="news__col">
+							<a href="#" class="news__item">
+								<div class="news__pic img-cover" style="background-image: url('../pic/news-item-2.jpg')"></div>
+								<h3 class="news__title">Rainfinity от Hansgrohe: новое представление о душевой системе</h3>
+								<span class="news__text">Немецкая компания Hansgrohe представила линейку душевых систем Rainfinity, которая перевернет ваше представление о релаксации.</span>
+								<span class="news__date">11 Января 2020</span>
+							</a>
+						</div>
+						<div class="news__col">
+							<a href="#" class="news__item">
+								<div class="news__pic img-cover" style="background-image: url('../pic/news-item-3.jpg')"></div>
+								<h3 class="news__title">Можно ли купить качественный смеситель за 15 000 рублей?</h3>
+								<span class="news__text">Немецкая компания Hansgrohe представила линейку душевых систем Rainfinity, которая перевернет ваше представление о релаксации.</span>
+								<span class="news__date">7 Декабря 2019</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="container">
+					<h2 class="title">Отзывы</h2>
+					<div class="reviews__row js-reviews">
+						<div class="reviews__col">
+							<a href="#" class="reviews__item">
+								<div class="reviews-person">
+									<div class="reviews-person__photo img-cover" style="background-image: url('../img/avatar-female.png')"></div>
+									<span class="reviews-person__name">Александра</span>
+								</div>
+								<span class="reviews__text">Уже 3 года пользуюсь услугами этого интернет-магазина. Очень доволен! Всем рекомендую!!!</span>
+								<div class="reviews-info">
+									<span class="reviews-info__more">Читать полностью</span>
+									<span class="reviews-info__date">7 Декабря 2019</span>
+								</div>
+							</a>
+						</div>
+						<div class="reviews__col">
+							<a href="#" class="reviews__item">
+								<div class="reviews-person">
+									<div class="reviews-person__photo img-cover" style="background-image: url('../img/avatar-male.png')"></div>
+									<span class="reviews-person__name">Степан Александров</span>
+								</div>
+								<span class="reviews__text">Покупал смеситель и остался очень доволен. После того покупа ещё раковину и биде! Вся сантехника из этого интернет-магазина. Уже 3 года пользуюсь услугами ...</span>
+								<div class="reviews-info">
+									<span class="reviews-info__more">Читать полностью</span>
+									<span class="reviews-info__date">14 Июля 2019</span>
+								</div>
+							</a>
+						</div>
+						<div class="reviews__col">
+							<a href="#" class="reviews__item">
+								<div class="reviews-person">
+									<div class="reviews-person__photo img-cover" style="background-image: url('../img/avatar-male.png')"></div>
+									<span class="reviews-person__name">Игорь нестеров</span>
+								</div>
+								<span class="reviews__text">Уже 3 года пользуюсь услугами этого интернет-магазина. Очень доволен! Всем рекомендую!!!</span>
+								<div class="reviews-info">
+									<span class="reviews-info__more">Читать полностью</span>
+									<span class="reviews-info__date">7 Декабря 2019</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="reviews-foot">
+						<a href="#" class="btn btn_black">Читать все отзывы</a>
+						<a href="#" class="btn btn_yellow">Отзывы на Яндекс маркете</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="container">
+					<h2 class="title">О компании</h2>
+					<div class="about-content">
+						<p>Компания «Сантех СТИЛЬ» предлагает Вам широкий ассортимент достойной, красивой, качественной и в то же время доступной продукции мировых, проверенных временем производителей западной Европы, России, Украины, Эстонии, Китая и других стран.</p>
+						<p>Представленные в нашем магазине товары — это продукция известных брендов, качество которых по достоинству оценили уже тысячи покупателей по всей Украине.</p>
+						<p>Мы сотрудничаем с известными и ведущими брендами мира сантехники: BESCO PMD PIRAMIDA, McAlpain, Italian Style, Badico, Vilarte, Ravak, Im-Pm, ТРИТОН, Devit, Kaldewei, Аква Родос, Ювента,  Мойдодыр, Balteko, Marsan, Laufen, Kolo, Duravit, Kludi, Appollo, Atlantis, Cersanit, Eago, Radaway, Koral, Serena, Vivia, Grandhome, CRW, Roca, Imprese, Grohe, Miracle, Flory, Gustavsberg</p>
+						<p>Интернет-каталог магазина «Сантех СТИЛЬ» мы расширяем каждый день. Если Вы не нашли необходимого именно Вам товара, позвоните, или напишите нам, мы для Вас обязательно его найдём, либо предложим аналог.<br>
+						На абсолютно все товары, представленные в интернет-магазине «Сантех СТИЛЬ» предоставляется официальная гарантия производителя. В нашем ассортименте сантехника для ванных комнат:<br>
+						- ванны: акриловые, стальные, чугунные, из камня (в гидромассаже и без);<br>
+						- ванны отдельно стоящие;<br>
+						- душевые кабины и гидромассажные боксы;<br>
+						</p>
+					</div>
+					<div class="about__more">
+						<span class="js-about-more">Показать полностью</span>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="container">
+					<div class="footer-main__row">
+						<div class="footer-main__col">
+							<a href="#" class="footer__logo"></a>
+						</div>
+						<div class="footer-main__col">
+							<div class="footer-nav">
+								<div class="footer-nav__item">
+									<a href="#">Главная</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">О компании</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#" class="is-special">Акции</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Сотрудничество</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Статьи и новости</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Отзывы</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Контакты</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer-main__col">
+							<div class="contacts contacts_footer">
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_address">
+										<svg class="contacts__icon contacts__icon_address" width="12" height="15">
+											<use xlink:href="./img/sprite.svg#pin"></use>
+										</svg>
+										<span class="contacts__text">г. Москва ул.Калнышевского 14<br> ст.м. Сагайдачного</span>
+									</div>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_mail">
+										<svg class="contacts__icon contacts__icon_letter" width="17" height="13">
+											<use xlink:href="./img/sprite.svg#letter"></use>
+										</svg>
+										<span class="contacts__text">
+											<a href="mailto:info@company24.com" class="link link_white">info@company24.com</a>
+										</span>
+										<span class="contacts__text contacts__text_sub">
+											<span class="link link_red link_red_dark" data-open="subscribe">Подписаться на рассылку</span>
+										</span>
+									</div>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_phones">
+										<svg class="contacts__icon contacts__icon_phones" width="14" height="14">
+											<use xlink:href="./img/sprite.svg#phone"></use>
+										</svg>
+										<a href="tel:+78005553535" class="contacts__text">8 800 <strong>555 35 35</strong></a>
+										<a href="tel:+78002833029" class="contacts__text">8 800 <strong>283 30 29</strong></a>
+									</div>
+								</div>
+								<br>
+								<div class="contacts__col">
+									<div class="contacts__item contacts__item_schedule">
+										<svg class="contacts__icon contacts__icon_clock" width="16" height="16">
+											<use xlink:href="./img/sprite.svg#clock"></use>
+										</svg>
+										<span class="contacts__text">
+											<span>ПН-ПТ с 08:00 до 17:00</span>
+											<span>СБ с 10:00 до 17:00</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="social social_footer">
+								<a href="#" class="social__item">
+									<svg class="social__icon" width="8" height="15">
+										<use xlink:href="./img/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+								<a href="#" class="social__item">
+									<svg class="social__icon" width="20" height="11">
+										<use xlink:href="./img/sprite.svg#vkontakte"></use>
+									</svg>
+								</a>
+								<a href="#" class="social__item">
+									<svg class="social__icon" width="15" height="15">
+										<use xlink:href="./img/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copy">
+				<div class="footer-copy__row container">
+					<span class="footer-copy__text">© 2019 Magus <span>|</span> Все права защищены</span>
+					<span class="footer-copy__text">Разработка дизайна сайта студия <a href="#">PixWhite</a></span>
+				</div>
+			</div>
+		</footer>
+
+		<div class="fade-bg"></div>
+
+		<div class="modal" data-target="subscribe">
+			<span class="modal__close">
+				<svg width="16" height="16">
+					<use xlink:href="./img/sprite.svg#close"></use>
+				</svg>
+			</span>
+			<span class="modal__title">Подписаться на рассылку</span>
+			<span class="modal__message">Введите свои данные и получайте рассылку со всеми новинками и акционными предложениями</span>
+			<form action="#" class="modal__form form">
+				<div class="form-field">
+					<input type="text" class="form-field__input" placeholder="Введите Имя">
+				</div>
+				<div class="form-field">
+					<input type="text" class="form-field__input" placeholder="Введите Email">
+				</div>
+				<button class="btn btn_yellow btn_big form__btn">Подписаться</button>
+			</form>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+.content-b {
+	margin: 49px auto 46px;
+
+	@media @tablet {
+		margin: 0;
+	}
+
+	&__row {
+		max-width: 954px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 25px;
+		line-height: 31px;
+		margin: 0 0 10px;
+
+		@media @tablet {
+			font-size: 22px;
+			line-height: 26px;
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+		line-height: 22px;
+		margin: -1px 0 14px;
+
+		@media @tablet {
+			font-size: 18px;
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 26px;
+	}
+
+	p {
+		color: @colorText;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 22px;
+	}
+
+	ul,
+	ol {
+		margin: 0 0 22px;
+
+		li {
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: bold;
+		}
+	}
+
+	ul li {
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 8px;
+			width: 5px;
+			height: 5px;
+			background-color: @colorBase;
+			border-radius: 50%;
+		}
+	}
+
+	ol {
+		margin-left: 18px;
+
+		li {
+			padding-left: 0;
+		}
+	}
+
+	&__date {
+		color: @colorRed;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: bold;
+		margin: 0 0 22px;
+	}
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		margin: 32px -10px 22px;
+
+		@media @tablet {
+			display: block;
+			text-align: center;
+		}
+
+		&__item {
+			display: inline-block;
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 10px;
+
+			&_prev,
+			&_next {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			&_prev {
+				color: #999999;
+
+				&:hover {
+					color: #999999;
+				}
+			}
+
+			&_next {
+				color: @colorBase;
+			}
+		}
+	}
+}
+
+.pagination {
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 0;
+
+	@media @tablet {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	&__item {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0 5px;
+	}
+
+	&__current {
+		display: inline-block;
+		min-width: 35px;
+		font-size: 20px;
+		line-height: 22px;
+		font-weight: bold;
+		text-align: center;
+		padding: 7px 4px 6px;
+		margin: -8px 3px -5px;
+		background-color: @colorYellow;
+		border-radius: 50%;
+	}
+}

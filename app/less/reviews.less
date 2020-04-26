@@ -1,0 +1,125 @@
+.reviews {
+	padding: 30px 0 0;
+
+	@media @tablet {
+		padding-top: 15px;
+	}
+
+	&__row {
+		font-size: 0;
+		margin: 0 -10px 20px;
+
+		&.slick-initialized {
+			padding-bottom: 40px;
+		}
+	}
+
+	&__col {
+		display: inline-block;
+		width: 33.3333%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+
+		@media @tablet {
+			width: 50%;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+
+	&-person {
+		display: flex;
+		align-items: center;
+		font-size: 0;
+		margin-bottom: 9px;
+
+		@media @tablet {
+			margin-bottom: 12px;
+		}
+
+		&__photo {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			background-color: #e9e9e9;
+			border-radius: 50%;
+
+			@media @tablet {
+				width: 75px;
+				height: 75px;
+				margin-right: 12px;
+			}
+		}
+
+		&__name {
+			display: inline-block;
+			flex: 1;
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: bold;
+		}
+	}
+
+	&__text {
+		display: block;
+		min-height: 66px;
+		color: @colorText;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 6px;
+
+		@media @tablet {
+			min-height: 0;
+		}
+	}
+
+	&-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 9px;
+
+		&__more {
+			display: inline-block;
+			text-decoration: underline;
+		}
+
+		&__date {
+			display: inline-block;
+		}
+	}
+
+	&__item {
+		display: block;
+
+		&:hover {
+			.reviews-info__more {
+				color: @colorRed;
+			}
+		}
+	}
+
+	&-foot {
+		text-align: center;
+		margin: 0 -10px 10px;
+
+		@media @tablet {
+			max-width: 290px;
+			margin: 33px auto 20px;
+		}
+
+		.btn {
+			margin: 0 10px 10px;
+
+			@media @tablet {
+				display: block;
+				margin: 0 0 10px;
+			}
+		}
+	}
+}

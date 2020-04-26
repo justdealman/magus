@@ -1,0 +1,160 @@
+.cooperation-b {
+	margin-bottom: 23px;
+
+	@media @tablet {
+		margin-bottom: 0;
+	}
+
+	&__row {
+		font-size: 0;
+		margin: 0 -10px;
+	}
+
+	&__col {
+		display: inline-block;
+		width: 50%;
+		padding: 0 10px;
+		margin-bottom: 10px;
+
+		@media @tablet {
+			width: 100%;
+		}
+	}
+
+	&-pic {
+		position: relative;
+		height: 240px;
+		margin-bottom: 28px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 32%, rgba(0, 0, 0, 0.6) 46%, rgba(0, 0, 0, 0) 100%);
+		}
+
+		&__subtitle {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 5;
+			width: 100%;
+			color: @colorWhite;
+			font-size: 25px;
+			line-height: 31px;
+			padding: 15px 20px;
+
+			strong {
+				display: block;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__text {
+		color: @colorText;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 22px;
+	}
+}
+
+.vacancy-b {
+	margin-bottom: 0;
+
+	&__row {
+		font-size: 0;
+		margin: 0 -10px -10px;
+	}
+
+	&__col {
+		display: inline-block;
+		width: 25%;
+		padding: 0 10px;
+		margin-bottom: 30px;
+
+		@media @notebook {
+			width: 33.3333%;
+		}
+
+		@media @tablet {
+			width: 50%;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+
+	&__pic {
+		width: 220px;
+		height: 220px;
+		border-radius: 50%;
+		margin-bottom: 26px;
+
+		@media @tablet {
+			width: 180px;
+			height: 180px;
+		}
+
+		@media @tablet {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	&__title {
+		display: block;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 21px;
+	}
+
+	&__text {
+		color: @colorText;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 8px;
+	}
+
+	&-details {
+		display: none;
+		margin: 20px 0 9px;
+
+		&.is-visible {
+			display: block;
+		}
+
+		&__subtitle {
+			display: block;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: bold;
+		}
+
+		p {
+			color: @colorText;
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+		}
+	}
+
+	&__more {
+		display: block;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 19px;
+
+		span {
+			color: @colorRed;
+			cursor: pointer;
+			border-bottom: 1px dashed @colorRed;
+		}
+	}
+}

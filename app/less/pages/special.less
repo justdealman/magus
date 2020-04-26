@@ -1,0 +1,95 @@
+.special-b {
+	margin: 0 0 32px;
+
+	@media @tablet {
+		margin-bottom: 0;
+	}
+
+	&__row {
+		max-width: 1200px;
+
+		@media @tablet {
+			font-size: 0;
+			margin: 0 -10px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 0 -10px 50px;
+
+		@media @tablet {
+			display: inline-block;
+			width: 50%;
+			padding: 0 10px;
+			margin: 0 0 20px;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+	}
+
+	&__lc {
+		display: inline-block;
+		width: 40%;
+		padding: 0 10px;
+
+		@media @tablet {
+			display: block;
+			width: auto;
+			padding: 0;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__pic {
+		padding-top: 50%;
+		box-shadow: 0 0 7px rgba(0, 1, 1, 0.1);
+	}
+
+	&__content {
+		display: inline-block;
+		width: 60%;
+		padding: 0 10px;
+
+		@media @tablet {
+			display: block;
+			width: auto;
+			padding: 0;
+		}
+	}
+
+	&__title {
+		display: block;
+		color: @colorRed;
+		font-size: 25px;
+		line-height: 31px;
+		margin-bottom: 9px;
+
+		@media @tablet {
+			font-size: 22px;
+			line-height: 26px;
+		}
+	}
+
+	&__text {
+		color: @colorText;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 22px;
+
+		strong {
+			color: @colorBase;
+		}
+	}
+
+	&__period {
+		display: block;
+		color: @colorRed;
+		font-size: 14px;
+		line-height: 20px;
+		margin: -12px 0 0;
+	}
+}

@@ -1,0 +1,153 @@
+.footer {
+	&-main {
+		padding: 50px 0 49px;
+		background-color: #272727;
+
+		@media @tablet {
+			padding: 61px 0 55px;
+		}
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 -15px;
+
+			@media @tablet {
+				display: block;
+				max-width: 480px;
+				margin: 0 auto;
+			}
+		}
+
+		&__col {
+			display: flex;
+			padding: 0 15px;
+
+			&_wide {
+				flex: 1;
+			}
+
+			@media @tablet {
+				display: block;
+				padding: 0;
+			}
+		}
+
+		@media @tablet {
+			.contacts__text span {
+				display: block;
+			}
+
+			.social_footer {
+				justify-content: flex-start;
+				display: flex;
+				margin: 33px 0 0;
+			}
+
+			.social__item {
+				margin-right: 15px;
+			}
+
+			.contacts_footer {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.contacts__col {
+				width: 100%;
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: 86px;
+		height: 125px;
+		background: url('../img/logo-footer.png') no-repeat 0 0;
+
+		@media @tablet {
+			margin: 0 auto 25px;
+		}
+	}
+
+	&-nav {
+		column-count: 2;
+		column-gap: 100px;
+		margin-top: 1px;
+
+		@media @notebook {
+			column-gap: 30px;
+		}
+
+		@media @tablet {
+			margin-bottom: 24px;
+		}
+
+		&__item {
+			break-inside: avoid;
+			font-size: 16px;
+			line-height: 22px;
+			white-space: nowrap;
+			padding: 4px 0;
+
+			@media @tablet {
+				padding: 9px 0;
+			}
+		}
+
+		a {
+			color: @colorWhite;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&.is-special {
+				color: @colorRed;
+			}
+		}
+	}
+
+	&-copy {
+		padding: 7px 0 8px;
+		background-color: #ffd700;
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+
+			@media @tablet {
+				display: block;
+				max-width: 480px;
+				margin: 0 auto;
+			}
+		}
+
+		&__text {
+			display: inline-block;
+			color: #121521;
+			font-size: 14px;
+			line-height: 20px;
+
+			@media @tablet {
+				display: block;
+				margin: 3px 0;
+			}
+
+			span {
+				padding: 0 4px;
+			}
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

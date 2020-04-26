@@ -1,0 +1,145 @@
+.catalog {
+	padding: 30px 0 0;
+
+	@media @tablet {
+		padding-top: 15px;
+	}
+
+	&-slider {
+		margin: 0 -10px 20px;
+
+		@media @medium-desktop {
+			padding-bottom: 64px;
+			margin-bottom: 20px;
+
+			.slick-arrow {
+				margin-top: -54px;
+			}
+		}
+
+		@media @tablet {
+			margin-bottom: 15px;
+		}
+
+		@media @mobile {
+			overflow: hidden;
+		}
+
+		.slick-list {
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				z-index: 5;
+				width: 10px;
+				height: 100%;
+				background-color: #ffffff;
+			}
+
+			&:before {
+				left: 0;
+			}
+
+			&:after {
+				right: 0;
+			}
+		}
+
+		&__col {
+			position: relative;
+			padding: 0 10px;
+		}
+
+		&__item {
+			position: relative;
+			display: block;
+		}
+
+		&__head {
+			max-width: 340px;
+			margin: 0 auto;
+		}
+
+		&__pic {
+			position: relative;
+			height: 250px;
+
+			@media @tablet {
+				height: 245px;
+			}
+		}
+
+		&__img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			img {
+				width: auto;
+				max-height: 100%;
+			}
+		}
+
+		&__content {
+			text-align: center;
+			padding-top: 5px;
+			margin-top: 11px;
+			border-top: 1px solid #7c7c7c;
+
+			@media @tablet {
+				padding-top: 6px;
+				margin-top: 10px;
+			}
+		}
+
+		&__name {
+			display: block;
+			min-height: 44px;
+			font-size: 16px;
+			line-height: 22px;
+
+			@media @tablet {
+				min-height: 0;
+				margin-bottom: 12px;
+			}
+		}
+
+		&__price {
+			display: block;
+			font-size: 20px;
+			line-height: 26px;
+			font-weight: bold;
+			margin-top: 1px;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		display: block;
+		min-width: 60px;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		padding: 8px 10px 5px;
+		text-transform: uppercase;
+
+		&_new {
+			background-color: @colorYellow;
+		}
+
+		&_hit {
+			color: @colorWhite;
+			background-color: @colorBase;
+		}
+	}
+}

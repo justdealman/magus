@@ -1,0 +1,156 @@
+.special {
+	padding: 30px 0 0;
+
+	@media @tablet {
+		padding-top: 15px;
+	}
+
+	&-slider {
+		margin: -10px -10px 20px;
+
+		@media @medium-desktop {
+			margin-bottom: 40px;
+		}
+
+		@media @tablet {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		&__col {
+			padding: 10px;
+
+			@media @tablet {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		&__item {
+			overflow: hidden;
+			position: relative;
+			display: block;
+			height: 325px;
+			background: rgba(0, 0, 0, .5);
+			transition: box-shadow .2s ease;
+
+			@media @tablet {
+				height: 340px;
+			}
+
+			&:hover {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		&__title {
+			position: absolute;
+			left: 60px;
+			top: 50%;
+			z-index: 1;
+			width: 100%;
+			height: 120px;
+			display: block;
+			color: @colorWhite;
+			font-size: 25px;
+			line-height: 30px;
+			text-align: center;
+			padding: 45px 0;
+			margin-top: -60px;
+			margin-left: -50%;
+			text-transform: uppercase;
+			background-color: #0a0a0a;
+			transform: rotate(-90deg);
+			transform-origin: 50% 50%;
+
+			@media @tablet {
+				left: 32px;
+				height: 64px;
+				font-size: 20px;
+				line-height: 22px;
+				padding: 21px 0;
+				margin-top: -32px;
+			}
+
+			@media @mobile {
+				width: 120%;
+				margin-left: -60%;
+			}
+		}
+
+		&__bg {
+			position: absolute;
+			left: 120px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			@media @tablet {
+				left: 64px;
+			}
+		}
+
+		@media @medium-desktop {
+			.slick-arrow {
+				margin-top: -34px;
+			}
+
+			.arrow-prev {
+				margin-left: 15px;
+			}
+
+			.arrow-next {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.slick-dots {
+		font-size: 0;
+		text-align: center;
+		margin: 7px 0 0;
+
+		@media @medium-desktop {
+			margin-top: 15px;
+		}
+
+		button {
+			position: relative;
+			display: block;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 10px;
+				height: 10px;
+				background-color: #d1d1d1;
+				margin-left: -5px;
+				margin-top: -5px;
+				border-radius: 50%;
+			}
+		}
+
+		li {
+			display: inline-block;
+
+			&.slick-active {
+				button {
+					&:before {
+						width: 14px;
+						height: 14px;
+						margin-left: -7px;
+						margin-top: -7px;
+						background-color: @colorBase;
+					}
+				}
+			}
+		}
+	}
+
+
+}
